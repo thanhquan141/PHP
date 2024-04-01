@@ -1,0 +1,40 @@
+Tạo database
+1--Form PHP - Tạo API
+    Trang xemnhansu.php (API xem danh sách nhân sự):
+    Sử dụng PHP để kết nối cơ sở dữ liệu và truy vấn dữ liệu từ bảng nhansu.
+    Hiển thị dữ liệu dưới dạng JSON.
+
+    Trang themnhansu.php (API thêm nhân sự):
+    Sử dụng PHP để nhận dữ liệu từ yêu cầu POST và thêm nhân sự vào bảng nhansu trong cơ sở dữ liệu.
+    
+    Trang xoanhansu.php (API xóa nhân sự):
+    Sử dụng PHP để nhận ID của nhân sự cần xóa từ yêu cầu POST và xóa nhân sự tương ứng từ bảng nhansu trong cơ sở dữ liệu.
+    
+    Trang suanhansu.php (API sửa nhân sự):
+    Sử dụng PHP để nhận dữ liệu của nhân sự cần sửa từ yêu cầu POST và cập nhật thông tin của nhân sự tương ứng trong bảng nhansu trong cơ sở dữ liệu.
+
+2--Form PHP - Sử dụng API
+
+Trang testapi.php (Hiển thị danh sách nhân sự):
+Sử dụng PHP để gửi yêu cầu GET đến API xemnhansu.php và hiển thị danh sách nhân sự dưới dạng bảng HTML.
+Có chức năng thêm nhân sự vào bảng nhansu thông qua API themnhansu.php.
+
+3--Form Java - Sử dụng API
+Class API.java (Đọc dữ liệu từ API):
+Sử dụng Java để gửi yêu cầu GET đến API xemnhansu.php và đọc dữ liệu JSON trả về.
+Class Form.java (Giao diện sử dụng API):
+Sử dụng Java để hiển thị giao diện Swing.
+Có chức năng thêm nhân sự thông qua gửi dữ liệu đến API themnhansu.php.
+Có chức năng load lại danh sách nhân sự thông qua gửi yêu cầu GET đến API xemnhansu.php.
+
+4--Để build ra file .jar từ dự án Java trong NetBeans, bạn có thể thực hiện các bước sau:
+
+Mở NetBeans và mở dự án Java của bạn.
+Chọn dự án của bạn từ cửa sổ Projects.
+Nhấp chuột phải vào dự án và chọn Properties.
+Trong cửa sổ Properties, chọn category Build.
+Trong mục Packaging, chọn mục Build JAR.
+Điều chỉnh các cài đặt cho file JAR của bạn nếu cần thiết.
+Nhấn OK để đóng cửa sổ Properties.
+Nhấn chuột phải vào dự án một lần nữa và chọn Build hoặc Clean and Build.
+Sau khi bạn hoàn thành các bước trên, NetBeans sẽ build dự án của bạn và tạo ra một file .jar. Bạn có thể tìm thấy file .jar này trong thư mục dist của dự án của bạn. Thường thì đường dẫn sẽ là: <đường dẫn dự án>/dist/.
